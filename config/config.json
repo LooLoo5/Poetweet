@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "vue_blog",
-    "host": "127.0.0.1",
+    "password": "",
+    "database": "tweetPoems",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
