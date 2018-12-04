@@ -5,8 +5,8 @@
  
  # Project Proposal
 
- **Poetweet**
- *Turning your tweets into poems since 2018*
+ **Poetweet** 
+ *Turning your tweets into poems since 2018* \
  We are building an app that will help people learn about and conquer poetry. Using a user's existing Tweets or someone else's (only if public),
  the app will reformat the tweet into a haiku, sonnnet, or even mad lib. The newly created poem will then be fed to a feed
  where others will be able to read and interact with the poems. 
