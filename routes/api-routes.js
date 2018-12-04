@@ -1,6 +1,6 @@
-const db = require("./../models");
+const db = require('./../models');
 
-module.exports = function(app){
+module.exports = function (app) {
     app.get('/', (request, response) => {
         response.send('Hello World!');
     });
@@ -14,7 +14,7 @@ module.exports = function(app){
         try {
             const posts = await db.Post.findAll({});
             response.json(posts);
-        } catch(error) {
+        } catch (error) {
             response.sendStatus(500);
         }
     });
