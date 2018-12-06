@@ -54,7 +54,6 @@ export default {
                 console.log(newPostError);
                 return;
             }
-
             console.log(newPost);
             this.$router.push({ name: 'posts' });
         },
