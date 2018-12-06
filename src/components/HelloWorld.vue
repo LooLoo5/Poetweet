@@ -3,8 +3,10 @@
     <h1 class="mt-3">{{ msg }}</h1>
     <p class="mt-3">
       Poetweet allows you to transfrom 140 characters or less into a haiku. <br><br>
-      A "Haiku" is a traditional form of Japanese poetry. Haiku poems consist of 3 lines, where the first <br>
-      and last lines have 5 syllables and the middle line has 7 syllables. The lines rarely rhyme.<br><br>
+      A "Haiku" is a traditional form of Japanese poetry. Haiku poems consist of 3 lines,
+      where the first <br>
+      and last lines have 5 syllables and the middle line has 7 syllables. The lines rarely
+      rhyme.<br><br>
       <router-link to="/posts/create-new-post">Create a poem</router-link>
     </p>
   </div>
