@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-const Twit = require('twit');
+// const Twit = require('twit');
 const db = require('./models');
 
 app.use(express.urlencoded({ extended: true }));
@@ -29,15 +29,15 @@ db.sequelize.sync().then(() => {
 
 // twitter bot
 
-const T = new Twit({
-    consumer_key: process.env.consumer_key,
-    consumer_secret: process.env.consumer_secret,
-    access_token: process.env.access_token,
-    access_token_secret: process.env.access_token_secret,
-    timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
-    strictSSL: true, // optional - requires SSL certificates to be valid.
-});
+// const T = new Twit({
+//     consumer_key: process.env.consumer_key,
+//     consumer_secret: process.env.consumer_secret,
+//     access_token: process.env.access_token,
+//     access_token_secret: process.env.access_token_secret,
+//     timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
+//     strictSSL: true, // optional - requires SSL certificates to be valid.
+// });
 
-T.get('search/tweets', { q: 'banana since:2017-07-11', count: 5 }, (err, data) => {
-    console.log(data.statuses[2].text);
-});
+// T.get('search/tweets', { q: 'banana since:2017-07-11', count: 5 }, (err, data) => {
+//     console.log(data.statuses[2].text);
+// });
