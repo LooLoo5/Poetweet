@@ -2,7 +2,7 @@
     <div id="post-title">
         <h4 class="border-bottom">{{ title }}</h4>
         <div class='text-right'>
-                {{ createdAt }}
+                {{ createdAt }} 
         </div>
     </div>
 </template>
