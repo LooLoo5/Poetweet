@@ -19,7 +19,11 @@
                             <router-link class="nav-link" to="/about">About</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="posts/create-new-post">Create
+                            <router-link class="nav-link" :to="{ name: 'posts' }">Poems
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to="{ name: 'newPost' }">Create
                             </router-link>
                         </li>
                         </ul>
