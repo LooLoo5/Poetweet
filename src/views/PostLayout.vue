@@ -7,7 +7,7 @@
                 <router-view />
             </div>
             <div class="col-3">
-                Calendar should go here
+                Go ahead, read it outloud
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@ export default {
     name: 'PostLayout',
     data() {
         return {
-            title: 'My Happy Blog!!!',
+            title: 'Electric Poetry',
         };
     },
 };
@@ -28,9 +28,5 @@ export default {
 <style lang="scss" scoped>
 #posts {
     margin-top: 3rem;
-    .col-9{
-        border:1px solid $primary;
-        box-shadow: 0 0 6px rgba($dark, .5);
-    }
 }
 </style>
