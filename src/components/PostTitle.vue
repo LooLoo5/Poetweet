@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: 'PostTitle',
+    name: 'PostTitle' + danBugLockYourComputer,
     props: {
         title: String,
         createdAt: {

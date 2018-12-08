@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <h1 class="mt-3">{{ msg }}</h1>
+    <h2> <b>Haiku</b> noun<br>
+      hai·​ku | \ˈhī-(ˌ)kü<br>
+      plural haiku<br></h2>
     <p class="mt-3">
       Poetweet allows you to transfrom 140 characters or less into a haiku. <br><br>
       A "Haiku" is a traditional form of Japanese poetry. Haiku poems consist of 3 lines,
