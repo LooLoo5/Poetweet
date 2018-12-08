@@ -1,13 +1,8 @@
 <template>
     <div id="postForm">
-        <div class="test">
-            <p class="lead">
-                {{post.title}}
-            </p>
-            <p class="lead">
-                {{post.body}}
-            </p>
-        </div>
+        <p>Let's use Twitter. Think about a keyword and type it into the form below. Click 'Select Search'.<br>
+        We will then search Twitter and return the first 10 tweets including that keyword. <br><br>
+        Finally, click on a Tweet you think would sound best as a Haiku. Click 'Select Tweet'. </p>
         <div class="form-row">
             <label for="title">Title</label>
             <input
@@ -35,13 +30,12 @@ import Axios from 'axios';
 import to from 'await-to-js';
 
 export default {
-    name: 'PostForm',
+    name: 'TweetForm',
     data() {
         return {
             post: {
                 title: null,
                 body: null,
-                twitter: 0,
             },
             isSubmitting: false,
         };

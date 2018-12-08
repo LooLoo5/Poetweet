@@ -1,5 +1,5 @@
 <template>
-    <div class="post-body">
+    <div class="container post-body">
         <slot v-html="content"></slot>
     </div>
 </template>

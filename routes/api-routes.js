@@ -18,6 +18,8 @@ module.exports = function (app) {
     });
     app.post('/api/post', async (request, response) => {
         console.log(request.body);
+        console.log(request.body.title);
+        console.log(request.body.body);
         try {
             const newPost = await db.Poems.create(request.body);
             response.json(newPost);

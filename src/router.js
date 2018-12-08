@@ -5,6 +5,9 @@ import PostLayout from './views/PostLayout.vue';
 import Post from './views/Post.vue';
 import PostForm from './views/PostForm.vue';
 import About from './views/About.vue';
+import TweetsLayout from './views/TweetsLayout.vue';
+import Tweet from './views/Tweet.vue';
+import TweetForm from './views/TweetForm.vue';
 
 Vue.use(Router);
 
@@ -21,6 +24,19 @@ export default new Router({
             path: '/about',
             name: 'about',
             component: About,
+        },
+        {
+            path: '/tweets',
+            component: TweetsLayout,
+            children: [{
+                path: '',
+                name: 'tweets',
+                component: Tweet,
+            }, {
+                path: 'create-new-tweetPoem',
+                name: 'newTweet',
+                component: TweetForm,
+            }],
         },
         {
             path: '/posts',

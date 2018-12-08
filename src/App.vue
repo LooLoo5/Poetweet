@@ -19,11 +19,19 @@
                             <router-link class="nav-link" to="/about">About</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" :to="{ name: 'posts' }">Poems
+                            <router-link class="nav-link" :to="{ name: 'newTweet' }">From Tweets
                             </router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" :to="{ name: 'newPost' }">Create
+                            <router-link class="nav-link" :to="{ name: 'tweets' }">Tweets List
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to="{ name: 'newPost' }">From Scratch
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to="{ name: 'posts' }">Scratch List
                             </router-link>
                         </li>
                         </ul>
