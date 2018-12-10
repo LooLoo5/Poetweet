@@ -175,9 +175,6 @@ module.exports = (app) => {
                 const newPost = db.Tweets.create(storedPoem);
                 response.json(newPost);
             });
-            // stores newpoem to mysql database
-            // const newPost = await db.Poems.create(request.body);
-            // response.json(newPost);
         } catch (error) {
             response.sendStatus(500);
         }

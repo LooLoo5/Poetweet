@@ -1,7 +1,7 @@
 <template>
     <div id="postList">
         <button
-                class="btn"
+                class="btn float-right btn-outline-primary"
                 v-on:click="toggleDarkMode">
                     Toggle {{ mode }} Mode
         </button>

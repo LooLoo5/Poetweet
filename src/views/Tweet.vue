@@ -1,10 +1,10 @@
 <template>
     <div id="tweetList">
-        <button
-                class="btn"
+        <!-- <button
+                class="btn float-right btn-outline-dark"
                 v-on:click="toggleDarkMode">
                     Toggle {{ mode }} Mode
-        </button>
+        </button> -->
         <transition-group name="fade">
             <div :class="{
                         tweet: true,

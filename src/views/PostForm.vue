@@ -1,13 +1,5 @@
 <template>
     <div class="container" id="postForm">
-        <!-- <div class="test">
-            <p class="lead">
-                {{post.title}}
-            </p>
-            <p class="lead">
-                {{post.body}}
-            </p>
-        </div> -->
         <div class="form-row">
             <label for="title">Title</label>
             <input
