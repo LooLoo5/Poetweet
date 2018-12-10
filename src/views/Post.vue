@@ -64,7 +64,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
+.postList {
+    width: 85%;
+    height: 320px;
+}
+#btn {
+    color: #4AB3F4;
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
