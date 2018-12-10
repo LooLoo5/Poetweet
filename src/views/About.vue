@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <b-container fluid>
+  <div class="about container">
+    <!-- <b-container fluid> -->
    <h1>About</h1>
   <p>
       A <b>haiku</b> is an unrhymed Japanese poetic form that consists of 17 syllables
@@ -11,17 +11,18 @@
       It remains Japan’s most popular poetic form. The Imagist poets (1912–30) and others
       have imitated the form in English and other languages.
   </p>
-  </b-container>
+  <!-- </b-container> -->
   </div>
 </template>
 <style scoped lang="scss">
 
 div {
 
-  height: 300px;
-  width: 85%;
-  padding: 25px;
-  margin: 25px;
+  height: 100%;
+  // width: 85%;
+  padding-left: 30px;
+  padding-right: 40px;
+  margin-top: 10%;
 }
 
 </style>
