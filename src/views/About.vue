@@ -1,9 +1,9 @@
 <template>
   <div class="about container">
-   <h1>This is Poetweet.</h1>
-   <h3>Turning your tweets into poems since 2018!</h3>
+   <h1>This is Poetweet.</h1><br>
+   <h3>Turning tweets into poems since 2018!</h3>
   <p>
-      Poetweet takes in two different forms, which ever you choose,
+      Poetweet takes in two different inputs, which ever you choose,
       and creates a Haiku for a fun and
       innovative way to learn about poetry forms.<br>
       The first form is a public tweet post that is taken and
@@ -16,7 +16,7 @@
       A <b>haiku</b> is an unrhymed Japanese poetic form that consists of 17 syllables
       arranged in three lines containing five, seven, and five syllables, respectively.
       A haiku expresses much and suggests more in the fewest possible words.
-      <br>
+      <!-- <br> -->
       <br>The form gained distinction in the 17th century, when Basho, a Japanese poet
       considered the greatest practitioner of the form, elevated it to a highly refined art.
       It remains Japan’s most popular poetic form. The Imagist poets (1912–30) and others
@@ -29,6 +29,6 @@ div {
     height: 100%;
     padding-left: 30px;
     padding-right: 40px;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 </style>
