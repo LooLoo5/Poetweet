@@ -16,17 +16,17 @@
 </template>
 
 <script>
-import Axios from "axios";
-import to from "await-to-js";
+import Axios from 'axios';
+import to from 'await-to-js';
 
 export default {
-    name: "PostForm",
+    name: 'PostForm',
     data() {
         return {
             post: {
                 keyword: null,
             },
-            isSubmitting: false
+            isSubmitting: false,
         };
     },
     methods: {
@@ -39,14 +39,14 @@ export default {
                 return;
             }
             console.log(newPost);
-            this.$router.push({ name: "tweets" });
+            this.$router.push({ name: 'tweets' });
         },
     },
     computed: {
         url() {
             return this.$store.state.URL;
-        }
-    }
+        },
+    },
 };
 </script>
 

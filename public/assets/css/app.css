@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar-text {
+   color: #4AB3F4;
+}
+
+.nav-link {
+    color: #4AB3F4;
+}
+
+#post-title {
+    color: #4AB3F4;
+}
+
+#post-body {
+    color: #4AB3F4;
+}
+
+.navbar-brand {
+    color: #4AB3F4; 
+}
