@@ -7,7 +7,7 @@
                 <router-view />
             </div>
             <div class="col-3">
-                Go ahead, read it outloud
+                <b>Go ahead, read it outloud!</b>
             </div>
         </div>
     </div>
@@ -28,5 +28,7 @@ export default {
 <style lang="scss" scoped>
 #posts {
     margin-top: 3rem;
+    width: 85%;
+    height: 320px;
 }
 </style>

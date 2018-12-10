@@ -28,6 +28,10 @@ export default {
 
 
 <style lang="scss" scoped>
+.post-title {
+    width: 85%;
+    height: 320px;
+}
 h4 {
     padding: 10px;
 }

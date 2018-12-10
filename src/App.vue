@@ -46,6 +46,9 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+a {
+    color: #4AB3F4;
+}
 
 </style>
