@@ -70,9 +70,9 @@ module.exports = (app) => {
                 const lineThree = [];
                 const arrObj = [];
                 let deletedIndx = [];
-                let lineOneSum = 0;
-                let lineTwoSum = 0;
-                let lineThreeSum = 0;
+                let lineOneSum = 1;
+                let lineTwoSum = 1;
+                let lineThreeSum = 1;
                 cleanArr.forEach((tWord) => {
                     const obj = {
                         word: tWord,

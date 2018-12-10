@@ -15,7 +15,9 @@
                 v-for="tweet in tweets"
                 :key="tweet.id">
                 <!-- <post-title :title="post.title" /> -->
-                <tweet-body><p class="lead">{{ tweet.body }}</p></tweet-body>
+                <tweet-body><p class="lead">{{ tweet.lineOne }}</p></tweet-body>
+                <tweet-body><p class="lead">{{ tweet.lineTwo }}</p></tweet-body>
+                <tweet-body><p class="lead">{{ tweet.lineThree }}</p></tweet-body>
             </div>
         </transition-group>
     </div>
