@@ -14,6 +14,5 @@ export default {
 .post-body {
     padding: 10px;
     width: 85%;
-    height: 320px;
 }
 </style>

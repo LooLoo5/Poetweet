@@ -4,11 +4,6 @@
             <div class="col-12">
                 <h4 class="border-bottom"> {{ title }}</h4>
             </div>
-            <!-- <div class="col-1">
-                <div class='text-center'>
-                        {{ createdAt }}
-                </div>
-            </div> -->
         </div>
     </div>
 </template>

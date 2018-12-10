@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img class="ml-3 mt-5" alt="Poetweet Logo" src="../assets/quillInk.png">
+    <img class="ml-3 mt-4" alt="Poetweet Logo" src="../assets/quillInk.png">
     <Home class="ml-3" msg="Create poetry using a Tweet"/>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div id="postForm">
+    <div class="container" id="postForm">
         <div class="test">
             <p class="lead">
                 {{post.title}}
@@ -68,6 +68,6 @@ export default {
 
 <style lang="scss" scoped>
 #postForm {
-    margin-bottom: 14px;
+    // margin-bottom: 14px;
 }
 </style>
