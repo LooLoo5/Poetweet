@@ -15,7 +15,10 @@
                 v-for="post in posts"
                 :key="post.id">
                 <post-title :title="post.title" />
-                <post-body><p class="lead">{{ post.body }}</p></post-body>
+                <!-- <post-body><p class="lead">{{ post.body }}</p></post-body> -->
+                <post-body><p class="lead">{{ post.lineOne }}</p></post-body>
+                <post-body><p class="lead">{{ post.lineTwo }}</p></post-body>
+                <post-body><p class="lead">{{ post.lineThree }}</p></post-body>
             </div>
         </transition-group>
     </div>

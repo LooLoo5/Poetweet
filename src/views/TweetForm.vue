@@ -33,7 +33,7 @@ export default {
         async submitForm() {
             this.isSubmitting = true;
             const url = `${this.url}/api/tweet`;
-            const [newPostError, newPost] = await to(Axios.post(url, this.post));
+            const [newPostError, newPost] = await to(Axios.post(url, this.tweet));
             if (newPostError) {
                 console.log(newPostError);
                 return;
