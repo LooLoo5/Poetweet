@@ -1,11 +1,5 @@
 <template>
   <div class="about container">
-    <h1>About</h1>
-    <p>
-      A
-      <b>haiku</b> is an unrhymed Japanese poetic form that consists of 17 syllables
-  <div class="about">
-    <b-container fluid>
    <h1>This is Poetweet.</h1>
 
    <h2>Turning your tweets into poems since 2018!</h2>
