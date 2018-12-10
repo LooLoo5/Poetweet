@@ -28,7 +28,7 @@ export default {
 <style lang="scss" scoped>
 #posts {
     margin-top: 3rem;
-    width: 50%;
+    width: 85%;
     height: 320px;
 }
 </style>

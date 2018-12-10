@@ -64,7 +64,7 @@ export default {
 
 <style scoped lang="scss">
 .postList {
-    width: 50%;
+    width: 85%;
     height: 320px;
 }
 #btn {

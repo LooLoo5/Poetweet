@@ -19,7 +19,7 @@
 div {
 
   height: 300px;
-  width: 50%;
+  width: 85%;
   padding: 25px;
   margin: 25px;
 }

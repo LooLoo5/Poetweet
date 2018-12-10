@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 .post-title {
-    width: 50%;
+    width: 85%;
     height: 320px;
 }
 h4 {

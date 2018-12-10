@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 .post-body {
     padding: 10px;
-    width: 50%;
+    width: 85%;
     height: 320px;
 }
 </style>
