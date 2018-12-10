@@ -1,12 +1,22 @@
 module.exports = function (sequelize, DataTypes) {
-    const Tweet = sequelize.define('Tweet', {
-        keyword: {
-            type: DataTypes.STRING,
+    const Tweets = sequelize.define('Tweets', {
+        lineOne: {
+            type: DataTypes.TEXT,
             allowNull: false,
-            validate: {
-                len: [1],
-            },
+            len: [1],
+        },
+        lineTwo: {
+            type: DataTypes.TEXT,
+            // allowNull: false,
+            len: [1],
+        },
+        lineThree: {
+            type: DataTypes.TEXT,
+            // allowNull: false,
+            len: [1],
         },
     });
-    return Tweet;
+    Tweets.associate = function () {
+    };
+    return Tweets;
 };

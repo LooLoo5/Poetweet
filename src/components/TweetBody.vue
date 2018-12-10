@@ -1,17 +1,17 @@
 <template>
-    <div class="container ml-3 post-body">
+    <div class="container ml-3 tweet-body">
         <slot v-html="content"></slot>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'postBody',
+    name: 'tweetBody',
 };
 </script>
 
 <style lang="scss" scoped>
-.post-body {
+.tweet-body {
     padding: 10px;
 }
 </style>

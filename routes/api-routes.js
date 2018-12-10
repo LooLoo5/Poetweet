@@ -29,8 +29,8 @@ module.exports = (app) => {
     app.get('/api/tweet', async (request, response) => {
         console.log('Render Tweet database');
         try {
-            const posts = await db.Tweet.findAll({});
-            response.json(posts);
+            const tweets = await db.Tweets.findAll({});
+            response.json(tweets);
         } catch (error) {
             response.sendStatus(500);
         }
@@ -109,6 +109,14 @@ module.exports = (app) => {
                 console.log(lineTwo.join(' '));
                 console.log(`The lineThreeSum is ${lineThreeSum}`);
                 console.log(lineThree.join(' '));
+                // stores newpoem to mysql database
+                const storedPoem = {
+                    lineOne: lineOne.join(' '),
+                    lineTwo: lineTwo.join(' '),
+                    lineThree: lineThree.join(' '),
+                };
+                const newPost = db.Tweets.create(storedPoem);
+                response.json(newPost);
             });
             // stores newpoem to mysql database
             // const newPost = await db.Poems.create(request.body);

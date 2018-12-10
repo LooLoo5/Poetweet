@@ -1,5 +1,5 @@
 <template>
-    <div id="postList">
+    <div id="tweetList">
         <button
                 class="btn"
                 v-on:click="toggleDarkMode">
@@ -7,15 +7,15 @@
         </button>
         <transition-group name="fade">
             <div :class="{
-                        post: true,
+                        tweet: true,
                         'bg-primary': isDark,
                         'text-light': isDark,
                         'mb-3': true,
                     }"
-                v-for="post in posts"
-                :key="post.id">
-                <post-title :title="post.title" />
-                <post-body><p class="lead">{{ post.body }}</p></post-body>
+                v-for="tweet in tweets"
+                :key="tweet.id">
+                <!-- <post-title :title="post.title" /> -->
+                <tweet-body><p class="lead">{{ tweet.body }}</p></tweet-body>
             </div>
         </transition-group>
     </div>
@@ -24,21 +24,21 @@
 <script>
 import Axios from 'axios';
 import to from 'await-to-js';
-import PostTitle from '@/components/PostTitle.vue';
-import PostBody from '@/components/PostBody.vue';
+// import PostTitle from '@/components/PostTitle.vue';
+import TweetBody from '@/components/TweetBody.vue';
 
 export default {
-    name: 'Post',
+    name: 'Tweet',
     data() {
         return {
-            posts: [],
+            tweets: [],
             mode: 'Light',
             isDark: true,
         };
     },
     components: {
-        PostTitle,
-        PostBody,
+        // PostTitle,
+        TweetBody,
     },
     methods: {
         toggleDarkMode() {
@@ -52,13 +52,13 @@ export default {
         },
     },
     async mounted() {
-        const [postsError, posts] = await to(Axios.get(`${this.url}/api/tweet`));
+        const [postsError, tweets] = await to(Axios.get(`${this.url}/api/tweet`));
         if (postsError) {
             console.log(postsError);
             return;
         }
 
-        this.posts = posts.data;
+        this.tweets = tweets.data;
     },
 
 };
