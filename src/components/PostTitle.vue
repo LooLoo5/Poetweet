@@ -13,10 +13,6 @@ export default {
     name: 'PostTitle',
     props: {
         title: String,
-        // createdAt: {
-        //     type: String,
-        //     default: 'today',
-        // },
     },
 };
 </script>
