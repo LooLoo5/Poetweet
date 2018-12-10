@@ -1,5 +1,5 @@
 <template>
-  <div id="tweetForm">
+  <div class="container" id="tweetForm">
     <div class="form-row">
       <label for="keyword">Keyword</label>
       <input type="text" name="keyword" class="form-control" v-model="post.keyword">

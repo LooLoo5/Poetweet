@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
+import HomeLayout from './views/HomeLayout.vue';
 import PostLayout from './views/PostLayout.vue';
 import Post from './views/Post.vue';
 import PostForm from './views/PostForm.vue';
@@ -18,7 +18,7 @@ export default new Router({
         {
             path: '/',
             name: 'home',
-            component: Home,
+            component: HomeLayout,
         },
         {
             path: '/about',

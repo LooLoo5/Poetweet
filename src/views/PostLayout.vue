@@ -2,12 +2,9 @@
 <div id="posts">
     <div class="container">
         <div class="row">
-            <div class="col-9">
+            <div class="col">
                 <h3>{{ title }}</h3>
                 <router-view />
-            </div>
-            <div class="col-3">
-                <b>Go ahead, read it outloud!</b>
             </div>
         </div>
     </div>
@@ -28,7 +25,7 @@ export default {
 <style lang="scss" scoped>
 #posts {
     margin-top: 3rem;
-    width: 85%;
-    height: 320px;
+    // width: 85%;
+    // height: 320px;
 }
 </style>
