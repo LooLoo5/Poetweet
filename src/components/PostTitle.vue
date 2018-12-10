@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: 'PostTitle' + danBugLockYourComputer,
+    name: 'PostTitle',
     props: {
         title: String,
         createdAt: {
@@ -22,6 +22,10 @@ export default {
 
 
 <style lang="scss" scoped>
+.post-title {
+    width: 50%;
+    height: 320px;
+}
 h4 {
     padding: 10px;
 }

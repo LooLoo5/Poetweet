@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LooLoo5/Project_Two_CoolForSchool"
+    "url": "git+https://github.com/LooLoo5/Poetweet"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LooLoo5/Project_Two_CoolForSchool"
+    "url": "https://github.com/LooLoo5/Poetweet"
   },
-  "homepage": "https://github.com/LooLoo5/Project_Two_CoolForSchool",
+  "homepage": "https://github.com/LooLoo5/Poetweet",
   "dependencies": {
     "@okta/jwt-verifier": "0.0.11",
     "await-to-js": "^2.1.1",
@@ -36,6 +36,8 @@
     "mysql2": "^1.6.4",
     "nodemon": "^1.18.7",
     "register-service-worker": "^1.5.2",
+    "sass": "^1.15.2",
+    "sass-convert": "^0.5.2",
     "sequelize": "4.37.6",
     "serve-handler": "^5.0.7",
     "sqlite3": "4.0.0",

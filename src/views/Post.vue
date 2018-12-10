@@ -61,3 +61,15 @@ export default {
 
 };
 </script>
+
+<style scoped lang="scss">
+.postList {
+    width: 50%;
+    height: 320px;
+}
+#btn {
+    color: #4AB3F4;
+}
+
+
+</style>
