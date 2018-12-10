@@ -33,7 +33,7 @@ export default new Router({
                 name: 'tweets',
                 component: Tweet,
             }, {
-                path: 'create-new-tweetPoem',
+                path: 'create-new-poetweet',
                 name: 'newTweet',
                 component: TweetForm,
             }],

@@ -52,7 +52,7 @@ export default {
         },
     },
     async mounted() {
-        const [postsError, posts] = await to(Axios.get(`${this.url}/api/post`));
+        const [postsError, posts] = await to(Axios.get(`${this.url}/api/tweet`));
         if (postsError) {
             console.log(postsError);
             return;

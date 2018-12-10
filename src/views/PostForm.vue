@@ -41,7 +41,6 @@ export default {
             post: {
                 title: null,
                 body: null,
-                twitter: 0,
             },
             isSubmitting: false,
         };
