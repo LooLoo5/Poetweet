@@ -1,16 +1,19 @@
 <template>
-    <div id="postList" class="p-3 mb-2 bg-info text-white">
+    <div id="postList" class="p-3 mb-2 text-black">
         <button
-                class="btn float-right btn-outline-primary"
+                class="btn float-right btn-outline-dark"
                 v-on:click="toggleDarkMode">
                     Toggle {{ mode }} Mode
         </button>
         <transition-group name="fade">
             <div :class="{
                         post: true,
-                        'bg-primary': isDark,
+                        'bg-info': isDark,
                         'text-light': isDark,
                         'mb-3': true,
+                        'border border-info': true,
+                        'rounded': true,
+                        'pb-2': true,
                     }"
                 v-for="post in posts"
                 :key="post.id">
@@ -67,9 +70,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.postList {
-    width: 85%;
-    height: 320px;
+p {
+    margin-bottom: 0;
 }
 #btn {
     color: #4AB3F4;
