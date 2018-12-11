@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <span class="border">
     <h1 class="mt-2">{{ msg }}</h1>
     <h3>
       <b>Haiku</b> noun
@@ -32,6 +33,7 @@
         </div>
       </div>
     </div>
+    </span>
   </div>
 </template>
 
