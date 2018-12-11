@@ -51,12 +51,12 @@ export default {
             console.log(newPost);
             this.$router.push({ name: 'tweets' });
         },
-        isLetter(evt) {
-            const ch = String.fromCharCode(event.keyCode);
-            const filter = /[a-zA-Z]/;
-            if (!filter.test(ch)) {
-                event.returnValue = false;
+        isLetter(e) {
+            if (('abcdefghijklmnopqrstuvwxyz ').indexOf(String.fromCharCode(e.keyCode)) === -1) {
+                e.preventDefault();
+                return false;
             }
+            return e;
         },
     },
     computed: {
