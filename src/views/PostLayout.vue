@@ -29,12 +29,12 @@
 
 <script>
 export default {
-    name: "PostLayout",
+    name: 'PostLayout',
     data() {
         return {
-            title: "Electric Poetry"
+            title: 'Electric Poetry',
         };
-    }
+    },
 };
 </script>
 

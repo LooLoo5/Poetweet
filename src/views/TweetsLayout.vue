@@ -29,12 +29,12 @@
 
 <script>
 export default {
-    name: "TweetsLayout",
+    name: 'TweetsLayout',
     data() {
         return {
-            title: "Electric Poetry"
+            title: 'Electric Poetry',
         };
-    }
+    },
 };
 </script>
 

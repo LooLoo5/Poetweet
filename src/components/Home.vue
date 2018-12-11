@@ -37,10 +37,10 @@
 
 <script>
 export default {
-    name: "Home",
+    name: 'Home',
     props: {
-        msg: String
-    }
+        msg: String,
+    },
 };
 </script>
 

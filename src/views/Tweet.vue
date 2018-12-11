@@ -30,29 +30,29 @@
 </template>
 
 <script>
-import Axios from "axios";
-import to from "await-to-js";
-import TweetTitle from "@/components/TweetTitle.vue";
-import TweetBody from "@/components/TweetBody.vue";
+import Axios from 'axios';
+import to from 'await-to-js';
+import TweetTitle from '@/components/TweetTitle.vue';
+import TweetBody from '@/components/TweetBody.vue';
 
 export default {
-    name: "Tweet",
+    name: 'Tweet',
     data() {
         return {
             tweets: [],
-            mode: "Light",
-            isDark: true
+            mode: 'Light',
+            isDark: true,
         };
     },
     components: {
         TweetTitle,
-        TweetBody
+        TweetBody,
     },
     methods: {
         toggleDarkMode() {
             this.isDark = !this.isDark;
-            this.mode = this.mode === "Light" ? "Dark" : "Light";
-        }
+            this.mode = this.mode === 'Light' ? 'Dark' : 'Light';
+        },
     },
     computed: {
         url() {
@@ -60,11 +60,11 @@ export default {
         },
         reverseItems() {
             return this.tweets.slice().reverse();
-        }
+        },
     },
     async created() {
         const [postsError, tweets] = await to(
-            Axios.get(`${this.url}/api/tweet`)
+            Axios.get(`${this.url}/api/tweet`),
         );
         if (postsError) {
             console.log(postsError);
@@ -73,7 +73,7 @@ export default {
 
         this.tweets = tweets.data;
         console.log(tweets.data);
-    }
+    },
 };
 </script>
 

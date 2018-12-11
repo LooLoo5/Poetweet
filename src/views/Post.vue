@@ -29,29 +29,29 @@
 </template>
 
 <script>
-import Axios from "axios";
-import to from "await-to-js";
-import PostTitle from "@/components/PostTitle.vue";
-import PostBody from "@/components/PostBody.vue";
+import Axios from 'axios';
+import to from 'await-to-js';
+import PostTitle from '@/components/PostTitle.vue';
+import PostBody from '@/components/PostBody.vue';
 
 export default {
-    name: "Post",
+    name: 'Post',
     data() {
         return {
             posts: [],
-            mode: "Light",
+            mode: 'Light',
             isDark: true,
         };
     },
     components: {
         PostTitle,
-        PostBody
+        PostBody,
     },
     methods: {
         toggleDarkMode() {
             this.isDark = !this.isDark;
-            this.mode = this.mode === "Light" ? "Dark" : "Light";
-        }
+            this.mode = this.mode === 'Light' ? 'Dark' : 'Light';
+        },
     },
     computed: {
         url() {
@@ -69,7 +69,7 @@ export default {
         }
 
         this.posts = posts.data;
-    }
+    },
 };
 </script>
 
