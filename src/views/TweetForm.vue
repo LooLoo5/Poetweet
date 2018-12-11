@@ -1,11 +1,13 @@
 <template>
   <div class="container" id="tweetForm">
-    <div class="form-row">
-      <label for="title">Haiku's Title</label>
+    <p><b>1</b> | Consider a thoughtful title.</p>
+    <p><b>2</b> | Type in one word to query Twitter, returning a hopefully delightful Poetweet.</p>
+    <div class="form-row mt-5">
+      <label for="title"><b>Haiku's Title</b></label>
       <input type="text" name="title" class="form-control" v-model="tweet.title">
     </div>
     <div class="form-row mt-2">
-      <label for="keyword">Twitter Search Keyword</label>
+      <label for="keyword"><b>Twitter Search Keyword</b></label>
       <input
         type="text"
         name="keyword"
@@ -18,7 +20,7 @@
       class="btn btn-info mt-3"
       v-on:click="submitForm()"
       :disabled="isSubmitting"
-    >Create a Haiku</button>
+    >Create Haiku</button>
   </div>
 </template>
 
@@ -49,10 +51,16 @@ export default {
                 return;
             }
             console.log(newPost);
-            this.$router.push({ name: 'tweets' });
+            setTimeout(() => {
+                this.$router.push({ name: 'tweets' });
+            }, 1000);
         },
         isLetter(e) {
-            if (('abcdefghijklmnopqrstuvwxyz ').indexOf(String.fromCharCode(e.keyCode)) === -1) {
+            if (
+                'abcdefghijklmnopqrstuvwxyz '.indexOf(
+                    String.fromCharCode(e.keyCode),
+                ) === -1
+            ) {
                 e.preventDefault();
                 return false;
             }

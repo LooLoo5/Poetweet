@@ -1,18 +1,20 @@
 <template>
   <div class="container" id="postForm">
-    <div class="form-row">
-      <label for="title">Haiku's Title</label>
+    <p><b>1</b> | Consider a thoughtful title.</p>
+    <p><b>2</b> | Type out a fun story, under 140 characters.</p>
+    <div class="form-row mt-5">
+      <label for="title"><b>Haiku's Title</b></label>
       <input type="text" name="title" class="form-control" v-model="post.title">
     </div>
     <div class="form-row mt-2">
-      <label for="title">Type in a Story</label>
+      <label for="title"><b>Type in a Story</b></label>
       <textarea name="body" v-model="post.body" class="form-control"/>
     </div>
     <button
       class="btn btn-info mt-3"
       v-on:click="submitForm()"
       :disabled="isSubmitting"
-    >Create a Haiku</button>
+    >Create Haiku</button>
   </div>
 </template>
 
@@ -43,7 +45,9 @@ export default {
                 return;
             }
             console.log(newPost);
-            this.$router.push({ name: 'posts' });
+            setTimeout(() => {
+                this.$router.push({ name: 'posts' });
+            }, 1000);
         },
     },
     computed: {
