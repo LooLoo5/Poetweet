@@ -19,7 +19,7 @@ export default {
     name: 'TweetsLayout',
     data() {
         return {
-            title: 'Find a Tweet',
+            title: 'Electric Poetry',
         };
     },
 };

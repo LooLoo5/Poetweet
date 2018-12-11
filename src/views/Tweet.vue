@@ -1,10 +1,10 @@
 <template>
     <div id="tweetList">
-        <!-- <button
-                class="btn float-right btn-outline-dark"
+        <button
+                class="btn float-right btn-outline-primary"
                 v-on:click="toggleDarkMode">
                     Toggle {{ mode }} Mode
-        </button> -->
+        </button>
         <transition-group name="fade">
             <div :class="{
                         tweet: true,
@@ -14,7 +14,7 @@
                     }"
                 v-for="tweet in tweets"
                 :key="tweet.id">
-                <!-- <post-title :title="post.title" /> -->
+                <tweet-title :title="tweet.title" />
                 <tweet-body><p class="lead">{{ tweet.lineOne }}</p></tweet-body>
                 <tweet-body><p class="lead">{{ tweet.lineTwo }}</p></tweet-body>
                 <tweet-body><p class="lead">{{ tweet.lineThree }}</p></tweet-body>
@@ -26,7 +26,7 @@
 <script>
 import Axios from 'axios';
 import to from 'await-to-js';
-// import PostTitle from '@/components/PostTitle.vue';
+import TweetTitle from '@/components/TweetTitle.vue';
 import TweetBody from '@/components/TweetBody.vue';
 
 export default {
@@ -39,7 +39,7 @@ export default {
         };
     },
     components: {
-        // PostTitle,
+        TweetTitle,
         TweetBody,
     },
     methods: {
@@ -66,7 +66,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
+.postList {
+    width: 85%;
+    height: 320px;
+}
+#btn {
+    color: #4AB3F4;
+}
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }

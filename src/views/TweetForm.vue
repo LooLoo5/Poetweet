@@ -1,17 +1,24 @@
 <template>
   <div class="container" id="tweetForm">
     <div class="form-row">
-      <label for="keyword">Keyword</label>
-      <input type="text" name="keyword" class="form-control" v-model="post.keyword">
+      <label for="title">Haiku's Title</label>
+      <input type="text" name="title" class="form-control" v-model="tweet.title">
     </div>
-    <!-- <div class="form-row">
-      <label for="keyword">Body</label>
-      <textarea name="body" v-model="post.body" class="form-control"/>
-    </div> -->
+    <div class="form-row mt-2">
+      <label for="keyword">Twitter Search Keyword</label>
+      <input
+        type="text"
+        name="keyword"
+        v-on:keypress="isLetter(event)"
+        class="form-control"
+        v-model="tweet.keyword"
+      >
+    </div>
     <button
       class="btn btn-primary mt-3"
       v-on:click="submitForm()"
-      :disabled="isSubmitting">Search Twitter</button>
+      :disabled="isSubmitting"
+    >Create a Haiku</button>
   </div>
 </template>
 
@@ -20,10 +27,11 @@ import Axios from 'axios';
 import to from 'await-to-js';
 
 export default {
-    name: 'PostForm',
+    name: 'TweetForm',
     data() {
         return {
-            post: {
+            tweet: {
+                title: null,
                 keyword: null,
             },
             isSubmitting: false,
@@ -33,13 +41,22 @@ export default {
         async submitForm() {
             this.isSubmitting = true;
             const url = `${this.url}/api/tweet`;
-            const [newPostError, newPost] = await to(Axios.post(url, this.tweet));
+            const [newPostError, newPost] = await to(
+                Axios.post(url, this.tweet),
+            );
             if (newPostError) {
                 console.log(newPostError);
                 return;
             }
             console.log(newPost);
             this.$router.push({ name: 'tweets' });
+        },
+        isLetter(evt) {
+            const ch = String.fromCharCode(event.keyCode);
+            const filter = /[a-zA-Z]/;
+            if (!filter.test(ch)) {
+                event.returnValue = false;
+            }
         },
     },
     computed: {

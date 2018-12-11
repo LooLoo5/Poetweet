@@ -35,8 +35,8 @@ module.exports = (app) => {
             response.sendStatus(500);
         }
     });
-    // sends post request to mysql
-    app.post('/api/post', async (request, response) => {
+    // sends POEMS post request to mysql
+    app.post('/api/post', (request, response) => {
         console.log(request.body.title);
         console.log(request.body.body);
         try {
@@ -59,10 +59,6 @@ module.exports = (app) => {
                 };
                 arrObj.push(obj);
             });
-            // if (arrObj[0].word === 'RT') {
-            //     deletedIndx = arrObj.splice(0, 2);
-            // }
-            // console.log(deletedIndx);
             console.log(arrObj);
             arrObj.forEach((ele) => {
                 if (lineOneSum < 6) {
@@ -105,7 +101,7 @@ module.exports = (app) => {
         }
     });
 
-    // sends post request to mysql
+    // sends TWEET post request to mysql
     app.post('/api/tweet', (request, response) => {
         console.log(request.body.keyword);
         try {
@@ -168,6 +164,7 @@ module.exports = (app) => {
                 console.log(lineThree.join(' '));
                 // stores newpoem to mysql database
                 const storedPoem = {
+                    title: request.body.title,
                     lineOne: lineOne.join(' '),
                     lineTwo: lineTwo.join(' '),
                     lineThree: lineThree.join(' '),
