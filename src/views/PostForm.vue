@@ -1,33 +1,19 @@
 <template>
-    <div class="container" id="postForm">
-        <!-- <div class="test">
-            <p class="lead">
-                {{post.title}}
-            </p>
-            <p class="lead">
-                {{post.body}}
-            </p>
-        </div> -->
-        <div class="form-row">
-            <label for="title">Title</label>
-            <input
-                type="text"
-                name="title"
-                class="form-control"
-                v-model="post.title" />
-        </div>
-        <div class="form-row">
-            <label for="title">Body</label>
-            <textarea
-                name="body"
-                v-model="post.body"
-                class="form-control" />
-        </div>
-        <button
-            class="btn btn-info mt-3"
-            v-on:click="submitForm()"
-            :disabled="isSubmitting">Create new post</button>
+  <div class="container" id="postForm">
+    <div class="form-row">
+      <label for="title">Haiku's Title</label>
+      <input type="text" name="title" class="form-control" v-model="post.title">
     </div>
+    <div class="form-row mt-2">
+      <label for="title">Type in a Story</label>
+      <textarea name="body" v-model="post.body" class="form-control"/>
+    </div>
+    <button
+      class="btn btn-primary mt-3"
+      v-on:click="submitForm()"
+      :disabled="isSubmitting"
+    >Create a Haiku</button>
+  </div>
 </template>
 
 <script>
@@ -49,7 +35,9 @@ export default {
         async submitForm() {
             this.isSubmitting = true;
             const url = `${this.url}/api/post`;
-            const [newPostError, newPost] = await to(Axios.post(url, this.post));
+            const [newPostError, newPost] = await to(
+                Axios.post(url, this.post),
+            );
             if (newPostError) {
                 console.log(newPostError);
                 return;

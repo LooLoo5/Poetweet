@@ -1,7 +1,7 @@
 <template>
     <div id="postList" class="p-3 mb-2 bg-info text-white">
         <button
-                class="btn"
+                class="btn float-right btn-outline-primary"
                 v-on:click="toggleDarkMode">
                     Toggle {{ mode }} Mode
         </button>
@@ -15,7 +15,6 @@
                 v-for="post in posts"
                 :key="post.id">
                 <post-title :title="post.title" />
-                <!-- <post-body><p class="lead">{{ post.body }}</p></post-body> -->
                 <post-body><p class="lead">{{ post.lineOne }}</p></post-body>
                 <post-body><p class="lead">{{ post.lineTwo }}</p></post-body>
                 <post-body><p class="lead">{{ post.lineThree }}</p></post-body>
