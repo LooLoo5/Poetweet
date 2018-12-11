@@ -1,6 +1,7 @@
 <template>
   <div class="about container">
-   <h1>This is Poetweet.</h1><br>
+    <span class="border">
+   <h1 class="text-info">This is Poetweet.</h1><br>
    <h3>Turning tweets into poems since 2018!</h3>
   <p>
       Poetweet takes in two different inputs, which ever you choose,
@@ -22,6 +23,7 @@
       It remains Japan’s most popular poetic form. The Imagist poets (1912–30) and others
       have imitated the form in English and other languages.
     </p>
+    </span>
   </div>
 </template>
 <style scoped lang="scss">

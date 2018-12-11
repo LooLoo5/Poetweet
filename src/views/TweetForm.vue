@@ -15,7 +15,7 @@
       >
     </div>
     <button
-      class="btn btn-primary mt-3"
+      class="btn btn-info mt-3"
       v-on:click="submitForm()"
       :disabled="isSubmitting"
     >Create a Haiku</button>

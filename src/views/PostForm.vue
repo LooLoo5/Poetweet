@@ -53,9 +53,3 @@ export default {
     },
 };
 </script>
-
-<style lang="scss" scoped>
-#postForm {
-    margin-bottom: 14px;
-}
-</style>

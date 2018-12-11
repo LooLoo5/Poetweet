@@ -1,5 +1,5 @@
 <template>
-    <div id="postList">
+    <div id="postList" class="p-3 mb-2 bg-info text-white">
         <button
                 class="btn float-right btn-outline-primary"
                 v-on:click="toggleDarkMode">
