@@ -12,6 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 .tweet-body {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 </style>

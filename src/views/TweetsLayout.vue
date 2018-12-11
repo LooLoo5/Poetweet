@@ -6,9 +6,6 @@
                 <h3>{{ title }}</h3>
                 <router-view />
             </div>
-            <!-- <div class="col-3">
-                Convert a Tweet into a Haiku
-            </div> -->
         </div>
     </div>
 </div>

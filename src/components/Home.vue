@@ -1,11 +1,11 @@
 <template>
-  <div class="hello">
+  <div class="container">
     <span class="border">
     <h1 class="mt-2">{{ msg }}</h1>
     <h3>
       <b>Haiku</b> noun
     </h3>
-    <p>hai ku | \ˈhī-(ˌ)kü
+    <p>hai • ku | \ˈhī-(ˌ)kü
       <br>plural haiku
       <br>
     </p>
@@ -22,12 +22,12 @@
     <div class="container">
       <div class="row">
         <div class="col-2 text-center">
-          <router-link to="/tweets/create-new-poetweet">Create a haiku
+          <router-link to="/tweets/create-new-poetweet" class="text-info">Create a haiku
             <br>from a tweet
           </router-link>
         </div>
         <div class="col-2 text-center">
-          <router-link to="/posts/create-new-post">Create a haiku
+          <router-link to="/posts/create-new-post" class="text-info">Create a haiku
             <br>from scratch
           </router-link>
         </div>
@@ -59,7 +59,7 @@ li {
     display: inline-block;
     margin: 0 10px;
 }
-a {
-    color: #4ab3f4;
-}
+// a {
+//     color: #4ab3f4;
+// }
 </style>
