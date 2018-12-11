@@ -56,7 +56,7 @@ export default {
             return this.$store.state.URL;
         },
     },
-    async mounted() {
+    async created() {
         const [postsError, tweets] = await to(Axios.get(`${this.url}/api/tweet`));
         if (postsError) {
             console.log(postsError);
@@ -64,6 +64,7 @@ export default {
         }
 
         this.tweets = tweets.data;
+        console.log(tweets.data);
     },
 
 };

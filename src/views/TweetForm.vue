@@ -23,18 +23,18 @@
 </template>
 
 <script>
-import Axios from 'axios';
-import to from 'await-to-js';
+import Axios from "axios";
+import to from "await-to-js";
 
 export default {
-    name: 'TweetForm',
+    name: "TweetForm",
     data() {
         return {
             tweet: {
                 title: null,
-                keyword: null,
+                keyword: null
             },
-            isSubmitting: false,
+            isSubmitting: false
         };
     },
     methods: {
@@ -42,28 +42,34 @@ export default {
             this.isSubmitting = true;
             const url = `${this.url}/api/tweet`;
             const [newPostError, newPost] = await to(
-                Axios.post(url, this.tweet),
+                Axios.post(url, this.tweet)
             );
             if (newPostError) {
                 console.log(newPostError);
                 return;
             }
             console.log(newPost);
-            this.$router.push({ name: 'tweets' });
+            setTimeout(() => {
+                this.$router.push({ name: "tweets" });
+            }, 1000);
         },
         isLetter(e) {
-            if (('abcdefghijklmnopqrstuvwxyz ').indexOf(String.fromCharCode(e.keyCode)) === -1) {
+            if (
+                "abcdefghijklmnopqrstuvwxyz ".indexOf(
+                    String.fromCharCode(e.keyCode)
+                ) === -1
+            ) {
                 e.preventDefault();
                 return false;
             }
             return e;
-        },
+        }
     },
     computed: {
         url() {
             return this.$store.state.URL;
-        },
-    },
+        }
+    }
 };
 </script>
 

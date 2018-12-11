@@ -43,7 +43,9 @@ export default {
                 return;
             }
             console.log(newPost);
-            this.$router.push({ name: 'posts' });
+            setTimeout(() => {
+                this.$router.push({ name: 'posts' });
+            }, 1000);
         },
     },
     computed: {
