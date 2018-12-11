@@ -24,7 +24,7 @@
                 class="form-control" />
         </div>
         <button
-            class="btn btn-primary mt-3"
+            class="btn btn-info mt-3"
             v-on:click="submitForm()"
             :disabled="isSubmitting">Create new post</button>
     </div>
@@ -65,9 +65,3 @@ export default {
     },
 };
 </script>
-
-<style lang="scss" scoped>
-#postForm {
-    // margin-bottom: 14px;
-}
-</style>

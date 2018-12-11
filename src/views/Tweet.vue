@@ -1,5 +1,5 @@
 <template>
-    <div id="tweetList">
+    <div id="tweetList" class="p-3 mb-2 bg-info text-white">
         <button
                 class="btn"
                 v-on:click="toggleDarkMode">

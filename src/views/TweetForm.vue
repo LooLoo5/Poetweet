@@ -9,7 +9,7 @@
       <textarea name="body" v-model="post.body" class="form-control"/>
     </div> -->
     <button
-      class="btn btn-primary mt-3"
+      class="btn btn-info mt-3"
       v-on:click="submitForm()"
       :disabled="isSubmitting">Search Twitter</button>
   </div>
