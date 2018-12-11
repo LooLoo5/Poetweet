@@ -3,7 +3,7 @@
     <div class="container" id="nav">
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <a class="navbar-brand text-info" href="/">Poetweet</a>
+          <a class="navbar-brand text-info">Poetweet</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -17,31 +17,23 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-              <!-- <li class="nav-item active">
+              <li class="nav-item active">
                 <router-link class="nav-link text-info" to="/">
                   Home
                   <span class="sr-only">(current)</span>
                 </router-link>
-              </li> -->
+              </li>
               <li class="nav-item">
                 <router-link class="nav-link text-info" to="/about">
                 About</router-link>
               </li>
-              <!-- <li class="nav-item">
-                <router-link class="nav-link text-info" :to="{ name: 'newTweet' }">
-                    Haiku via Tweet</router-link>
-              </li> -->
               <li class="nav-item">
                 <router-link class="nav-link text-info" :to="{ name: 'tweets' }">
-                    Haikus by Tweets</router-link>
+                    Haikus via Tweets</router-link>
               </li>
-              <!-- <li class="nav-item">
-                <router-link class="nav-link text-info" :to="{ name: 'newPost' }">
-                    Haiku via User</router-link>
-              </li> -->
               <li class="nav-item">
                 <router-link class="nav-link text-info" :to="{ name: 'posts' }">
-                    Haikus by People</router-link>
+                    Haikus via Form</router-link>
               </li>
             </ul>
             <span class="navbar-text text-info pt-2">
