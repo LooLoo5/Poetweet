@@ -28,9 +28,8 @@
 </template>
 <style scoped lang="scss">
 div {
-    height: 100%;
-    padding-left: 30px;
-    padding-right: 40px;
+    padding-left: 2%;
+    padding-right: 3%;
     margin-top: 8%;
 }
 </style>

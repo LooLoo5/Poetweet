@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h3>{{ title }}</h3>
+                <h3 class="title">{{ title }}</h3>
                 <router-view />
             </div>
         </div>
@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.title {
+    margin-left: 1.5%;
+}
 #posts {
     margin-top: 3rem;
 }
