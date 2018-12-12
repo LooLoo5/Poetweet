@@ -1,24 +1,12 @@
 <template>
   <div class="container" id="postForm">
     <p>
-      <b>1</b> | Consider a thoughtful title.
+      <b>1</b> | Type out a fun story, under 140 characters.
     </p>
     <p>
-      <b>2</b> | Type out a fun story, under 140 characters.
+      <b>2</b> | Consider a thoughtful title.
     </p>
     <div class="form-row mt-5">
-      <label for="title">
-        <b>Haiku's Title</b>
-      </label>
-      <input
-        type="text"
-        name="title"
-        class="form-control"
-        placeholder="stay creative"
-        v-model="post.title"
-      >
-    </div>
-    <div class="form-row mt-2">
       <label for="title">
         <b>Type in a Story</b>
       </label>
@@ -30,8 +18,21 @@
         maxlength="140"
       />
     </div>
+    <div class="form-row mt-2">
+      <label for="title">
+        <b>Haiku's Title</b>
+      </label>
+      <input
+        type="text"
+        name="title"
+        class="form-control"
+        placeholder="stay creative"
+        v-model="post.title"
+      >
+    </div>
     <button
-      class="btn btn-info mt-3"
+      class="btn mt-3"
+      id="twitter-blue"
       v-on:click="submitForm()"
       :disabled="isSubmitting"
     >Create Haiku</button>
@@ -77,3 +78,10 @@ export default {
     },
 };
 </script>
+
+<style lang="scss" scoped>
+#twitter-blue {
+    color: #1ca1f1;
+    font-weight: bold;
+}
+</style>

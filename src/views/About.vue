@@ -1,6 +1,6 @@
 <template>
   <div class="about container">
-   <h1 class="text-info">This is Poetweet.</h1><br>
+   <h1 id="twitter-blue">This is Poetweet.</h1><br>
    <h3>Turning tweets into poems since 2018!</h3>
   <p>
       Poetweet takes in two different inputs, which ever you choose,
@@ -11,7 +11,16 @@
       The second form the app takes in is your personal writing and renders
       the body of text into a Haiku as well.<br>
   </p>
-   <h3>But.. What is a Haiku?</h3>
+   <!-- <h3>But.. What is a Haiku?</h3> -->
+   <br>
+
+    <h3>
+           <b>Haiku</b> noun
+      </h3>
+      <p>hai • ku | \ˈhī-(ˌ)kü
+        <br>plural haiku
+        <br>
+      </p>
   <p>
       A <b>haiku</b> is an unrhymed Japanese poetic form that consists of 17 syllables
       arranged in three lines containing five, seven, and five syllables, respectively.
@@ -29,5 +38,9 @@ div {
     padding-left: 2%;
     padding-right: 3%;
     margin-top: 8%;
+}
+
+#twitter-blue {
+    color: #1ca1f1;
 }
 </style>

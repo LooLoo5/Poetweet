@@ -6,13 +6,13 @@
           <h3 class="title">{{ title }}</h3>
         </div>
         <div class="col navLinks">
-          <div class="btn">
-            <router-link class="nav-link text-info" to="/tweets/create-new-poetweet">Create Haiku
+          <div class="btn" id="twitter-blue">
+            <router-link class="nav-link" to="/tweets/create-new-poetweet">Create Haiku
               <br>via Tweet
             </router-link>
           </div>
-          <div class="btn">
-            <router-link class="nav-link text-info" to="/posts/create-new-post">Create Haiku
+          <div class="btn" id="twitter-blue">
+            <router-link class="nav-link" to="/posts/create-new-post">Create Haiku
               <br>via Form
             </router-link>
           </div>
@@ -47,5 +47,9 @@ export default {
 }
 .navLinks {
     margin-left: 11%;
+}
+
+#twitter-blue {
+  color: #1ca1f1;
 }
 </style>

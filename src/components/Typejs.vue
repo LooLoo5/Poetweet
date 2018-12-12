@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-      <div class="type text-info"></div>
+  <div class="container pl-0 pr-0">
+      <div class="type" id="twitter-blue2"></div>
   </div>
 </template>
 
@@ -14,5 +14,10 @@ export default {
 <style scoped lang="scss">
 .type {
   margin-top: 10rem;
+  font-size: 1.5rem;
+}
+
+#twitter-blue2 {
+  color: #1ca1f1;
 }
 </style>
