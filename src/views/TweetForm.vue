@@ -1,24 +1,12 @@
 <template>
   <div class="container" id="tweetForm">
     <p>
-      <b>1</b> | Consider a thoughtful title.
+      <b>1</b> | Type in one word to query Twitter, returning a hopefully delightful Poetweet.
     </p>
     <p>
-      <b>2</b> | Type in one word to query Twitter, returning a hopefully delightful Poetweet.
+      <b>2</b> | Consider a thoughtful title.
     </p>
     <div class="form-row mt-5">
-      <label for="title">
-        <b>Haiku's Title</b>
-      </label>
-      <input
-        type="text"
-        name="title"
-        class="form-control"
-        placeholder="get creative"
-        v-model="tweet.title"
-      >
-    </div>
-    <div class="form-row mt-2">
       <label for="keyword">
         <b>Twitter Search Keyword</b>
       </label>
@@ -29,6 +17,18 @@
         class="form-control"
         v-model="tweet.keyword"
         placeholder="one special word"
+      >
+    </div>
+    <div class="form-row mt-2">
+      <label for="title">
+        <b>Haiku's Title</b>
+      </label>
+      <input
+        type="text"
+        name="title"
+        class="form-control"
+        placeholder="get creative"
+        v-model="tweet.title"
       >
     </div>
     <button
