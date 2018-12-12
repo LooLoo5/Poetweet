@@ -8,7 +8,8 @@ Orig. Deployment - December 12, 2018
 We wanted to encourage people to write, but more importantly, to create and explore poetic forms. As an educational and fun tool, Poetweet turns tweets from Twitter, or your own 140 characters, into Haikus. We hope to bring you more poetic forms in V2, as well as the ability to turn your own tweets from your Twitter account into poems.
 
 # User Guide
-![Image of a Quill](./public/assets/images/quillInk.png)
+<img src="./public/assets/images/quillInk.png" 
+alt="image of quill" width="200"/></a>
 
 Here's how it works:
 
