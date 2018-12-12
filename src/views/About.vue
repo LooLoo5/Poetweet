@@ -1,6 +1,6 @@
 <template>
   <div class="about container">
-   <h1 class="text-info">This is Poetweet.</h1><br>
+   <h1 id="twitter-blue">This is Poetweet.</h1><br>
    <h3>Turning tweets into poems since 2018!</h3>
   <p>
       Poetweet takes in two different inputs, which ever you choose,
@@ -38,5 +38,9 @@ div {
     padding-left: 2%;
     padding-right: 3%;
     margin-top: 8%;
+}
+
+#twitter-blue {
+    color: #1ca1f1;
 }
 </style>

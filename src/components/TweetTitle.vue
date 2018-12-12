@@ -2,7 +2,7 @@
     <div class="container" id="tweet-title">
         <div class="row">
             <div class="col-12">
-                <h4 class="border-bottom"> {{ title }}</h4>
+                <h4 class="border-bottom border-white"> {{ title }}</h4>
             </div>
         </div>
     </div>

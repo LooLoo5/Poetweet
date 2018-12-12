@@ -31,7 +31,8 @@
       >
     </div>
     <button
-      class="btn btn-info mt-3"
+      class="btn mt-3"
+      id="twitter-blue"
       v-on:click="submitForm()"
       :disabled="isSubmitting"
     >Create Haiku</button>
@@ -77,3 +78,10 @@ export default {
     },
 };
 </script>
+
+<style lang="scss" scoped>
+#twitter-blue {
+    color: #1ca1f1;
+    font-weight: bold;
+}
+</style>
