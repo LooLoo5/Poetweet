@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="mt-2" id="title">{{ msg }}</h1>
+    <h1 class="mt-2" id="title"> <i>Create poetry using</i> <b> Poetweet</b></h1>
     <h3>
       <b>Haiku</b> noun
     </h3>

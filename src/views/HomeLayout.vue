@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-8">
         <img class="ml-3 mt-4" alt="Poetweet Logo" src="../assets/quillInk.png">
-        <Home class="ml-3" msg="Create poetry using a Tweet"/>
+        <Home class="ml-3" msg=""/>
       </div>
       <div class="col-4 pl-0 pr-0">
         <Typejs/>
