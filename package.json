@@ -45,6 +45,7 @@
     "syllable": "^3.2.0",
     "twit": "^2.2.11",
     "twitter-text": "^3.0.0",
+    "typed.js": "^2.0.9",
     "vue": "^2.5.17",
     "vue-loader": "^15.4.2",
     "vue-router": "^3.0.1",

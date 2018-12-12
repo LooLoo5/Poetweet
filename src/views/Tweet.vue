@@ -62,7 +62,7 @@ export default {
             return this.tweets.slice().reverse();
         },
     },
-    async created() {
+    async mounted() {
         const [postsError, tweets] = await to(
             Axios.get(`${this.url}/api/tweet`),
         );
