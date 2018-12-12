@@ -11,7 +11,16 @@
       The second form the app takes in is your personal writing and renders
       the body of text into a Haiku as well.<br>
   </p>
-   <h3>But.. What is a Haiku?</h3>
+   <!-- <h3>But.. What is a Haiku?</h3> -->
+   <br>
+   
+    <h3>
+           <b>Haiku</b> noun
+      </h3>
+      <p>hai • ku | \ˈhī-(ˌ)kü
+        <br>plural haiku
+        <br>
+      </p>
   <p>
       A <b>haiku</b> is an unrhymed Japanese poetic form that consists of 17 syllables
       arranged in three lines containing five, seven, and five syllables, respectively.
