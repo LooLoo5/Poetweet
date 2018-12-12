@@ -9,7 +9,7 @@
     <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="./assets/images/quillInk.png"/>
-    <link rel="stylesheet" type="text/css" href="./public/assets/css/app.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./public/assets/css/app.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Mono|Ubuntu:500" rel="stylesheet">
     <title>Poetweet</title>
   </head>
@@ -20,6 +20,20 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+      const options = {
+        strings: ['This framework is so wonderful!<br> Such glow, much ease, so colorful.<br> Git add, git commit, let’s grab a beer<br>Because it\'s free and powerful.', 
+        'Create your own Poetweet.'],
+        typeSpeed: 50,
+        showCursor: false,
+        fadeOut: false,
+        loop: true,
+        loopCount: Infinity,
+      };
+      const typed = new Typed('.type', options);
+
+    </script>
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
     <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>

@@ -20,14 +20,14 @@
       </p>
       <div class="container">
         <div class="row">
-          <div class="col-2 text-center">
-            <router-link to="/tweets/create-new-poetweet" class="text-info">Create a haiku
-              <br>from a tweet
+          <div class="col-3 text-left pl-0">
+            <router-link to="/tweets/create-new-poetweet" class="text-info"><i>Create a haiku
+              <br>from a <b>tweet</b></i>
             </router-link>
           </div>
-          <div class="col-2 text-center">
-            <router-link to="/posts/create-new-post" class="text-info">Create a haiku
-              <br>from scratch
+          <div class="col-3 text-left pl-0">
+            <router-link to="/posts/create-new-post" class="text-info"><i>Create a haiku
+              <br>from <b>scratch</b></i>
             </router-link>
           </div>
         </div>
