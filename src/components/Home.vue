@@ -22,7 +22,8 @@
     <div class="container">
       <div class="row">
         <div class="col-3 text-left pl-0">
-          <router-link to="/tweets/create-new-poetweet" class="btn btn-outline-light" id="twitter-white">
+          <router-link to="/tweets/create-new-poetweet"
+          class="btn btn-outline-light" id="twitter-white">
             <i>Create a haiku
               <br>from a
               <b>tweet</b>
