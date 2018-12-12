@@ -81,7 +81,7 @@ export default {
 
 <style lang="scss" scoped>
 #twitter-blue {
-    color: #1ca1f1;
+    color: black;
     font-weight: bold;
 }
 </style>
