@@ -4,7 +4,7 @@
     <p><b>2</b> | Type in one word to query Twitter, returning a hopefully delightful Poetweet.</p>
     <div class="form-row mt-5">
       <label for="title"><b>Haiku's Title</b></label>
-      <input type="text" name="title" class="form-control" v-model="tweet.title">
+      <input type="text" name="title" class="form-control" placeholder="get creative" v-model="tweet.title">
     </div>
     <div class="form-row mt-2">
       <label for="keyword"><b>Twitter Search Keyword</b></label>
@@ -14,6 +14,7 @@
         v-on:keypress="isLetter(event)"
         class="form-control"
         v-model="tweet.keyword"
+        placeholder="one special word"
       >
     </div>
     <button
@@ -56,8 +57,7 @@ export default {
             }, 1000);
         },
         isLetter(e) {
-            if (
-                'abcdefghijklmnopqrstuvwxyz '.indexOf(
+            if ('abcdefghijklmnopqrstuvwxyz '.indexOf(
                     String.fromCharCode(e.keyCode),
                 ) === -1
             ) {

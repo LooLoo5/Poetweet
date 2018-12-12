@@ -14,7 +14,5 @@ export default {
 <style scoped lang="scss">
 .type {
   margin-top: 10rem;
-  // transform: rotate(-10deg);
-	// transform-origin: left top 0;
 }
 </style>
